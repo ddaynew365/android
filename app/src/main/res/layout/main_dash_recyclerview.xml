@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="2dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        card_view:cardBackgroundColor="@color/thm1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/main_dashboard_content_mainmemo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:adjustViewBounds="true"
+                android:hint="메인내용"
+                android:src="@mipmap/ic_launcher_round"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/main_dashboard_content_semimemo"
+                android:layout_below="@id/main_dashboard_content_mainmemo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:hint="부가내용"
+                android:textColor="#000000"
+                android:textSize="13dp"
+
+                />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
