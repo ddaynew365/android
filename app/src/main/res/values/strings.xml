@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AllInOne</string>
+    <string name="app_name">오늘의 일정</string>
     <string name="slding_root_nav_ex1">sr_ex1</string>
     <string name="slding_root_nav_ex2">sr_ex2</string>
     <string name="slding_root_nav_ex3">sr_ex3</string>
