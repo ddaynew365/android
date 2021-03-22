@@ -14,7 +14,6 @@ import coms.example.allinonelowfiproject.dashboard.DashboardRecyclerViewAdapter;
 import coms.example.allinonelowfiproject.objects.DashItem;
 import coms.example.allinonelowfiproject.slidingRootNav.SlidingRootNavBuilder;
 
-
 public class MainActivity extends AppCompatActivity {
 
     RecyclerView dashRecyclerView;
@@ -22,12 +21,11 @@ public class MainActivity extends AppCompatActivity {
     GridLayoutManager dashLayoutManager;
 
     ArrayList<DashItem> list = new ArrayList<DashItem>() {{
-        add(new DashItem("1번메인내용","1번부가내용"));
-        add(new DashItem("2번메인내용","2번부가내용"));
-        add(new DashItem("3번메인내용","3번부가내용"));
-        add(new DashItem("4번메인내용","4번부가내용"));
+        add(new DashItem("1번 메인내용","1번 부가내용"));
+        add(new DashItem("2번 메인내용","2번 부가내용"));
+        add(new DashItem("3번 메인내용","3번 부가내용"));
+        add(new DashItem("4번 메인내용","4번 부가내용"));
     }};
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +62,5 @@ public class MainActivity extends AppCompatActivity {
 
         dashRecyclerView.setLayoutManager(dashLayoutManager);
         dashRecyclerView.setAdapter(dashRecyclerAdapter);
-
     }
 }
