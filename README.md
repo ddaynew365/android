@@ -16,7 +16,7 @@
     - Java : dashboard 패키지
     - xml : main_dash_recyclerview
   - 캘린더 기능
-    - Java : mainCalendar 패키지, Decorator 패키지
+    - Java : mainCalendar 패키지, decorator 패키지
     - xml : calendar_view  
   
   <img src="https://user-images.githubusercontent.com/17956765/111982769-b5467100-8b4c-11eb-96c6-cfa9eb9356ac.gif" width="32%" height="32%">
