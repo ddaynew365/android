@@ -34,9 +34,28 @@ tools:context="coms.example.allinonelowfiproject.MainActivity">
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/main_dashboard_recycler"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:paddingLeft="5dp"
             android:paddingRight="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/thm2"
+            android:orientation="vertical">
+
+            <coms.example.allinonelowfiproject.mainCalendar.MaterialCalendarView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:mcv_selectionColor="@color/thm1"
+                app:mcv_showOtherDates="defaults" />
+
+        </LinearLayout>
 
     </LinearLayout>
 

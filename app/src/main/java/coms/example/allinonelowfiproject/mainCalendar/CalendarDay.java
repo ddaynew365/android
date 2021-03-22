@@ -8,6 +8,10 @@ import org.threeten.bp.LocalDate;
 
 import java.util.Calendar;
 
+import static java.util.Calendar.DATE;
+import static java.util.Calendar.MONTH;
+import static java.util.Calendar.YEAR;
+
 /**
  * An imputable representation of a day on a calendar, based on {@link LocalDate}.
  */
@@ -67,6 +71,17 @@ public final class CalendarDay implements Parcelable {
             return null;
         }
         return new CalendarDay(date);
+    }
+
+    public static CalendarDay from(@Nullable Calendar calendar) {
+        if (calendar == null) {
+            return null;
+        }
+        return from(
+                calendar.get(YEAR)+1,
+                calendar.get(MONTH)+1,
+                calendar.get(DATE)+1
+        );
     }
 
     /**

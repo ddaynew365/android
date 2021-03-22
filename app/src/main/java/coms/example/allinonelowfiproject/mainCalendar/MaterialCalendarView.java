@@ -395,7 +395,6 @@ public class MaterialCalendarView extends ViewGroup {
             ));
 
             setAllowClickDaysOutsideCurrentMonth(a.getBoolean(
-
                     R.styleable.MaterialCalendarView_mcv_allowClickDaysOutsideCurrentMonth,
                     true
             ));
@@ -951,24 +950,24 @@ public class MaterialCalendarView extends ViewGroup {
     }
 
     /**
-     * Set a {@linkplain com.prolificinteractive.materialcalendarview.format.WeekDayFormatter}
+     * Set a {@linkplain coms.example.allinonelowfiproject.mainCalendar.format.WeekDayFormatter}
      * with the provided week day labels
      *
      * @param weekDayLabels Labels to use for the days of the week
-     * @see com.prolificinteractive.materialcalendarview.format.ArrayWeekDayFormatter
-     * @see #setWeekDayFormatter(com.prolificinteractive.materialcalendarview.format.WeekDayFormatter)
+     * @see coms.example.allinonelowfiproject.mainCalendar.format.ArrayWeekDayFormatter
+     * @see #setWeekDayFormatter(coms.example.allinonelowfiproject.mainCalendar.format.WeekDayFormatter)
      */
     public void setWeekDayLabels(CharSequence[] weekDayLabels) {
         setWeekDayFormatter(new ArrayWeekDayFormatter(weekDayLabels));
     }
 
     /**
-     * Set a {@linkplain com.prolificinteractive.materialcalendarview.format.WeekDayFormatter}
+     * Set a {@linkplain coms.example.allinonelowfiproject.mainCalendar.format.WeekDayFormatter}
      * with the provided week day labels
      *
      * @param arrayRes String array resource of week day labels
-     * @see com.prolificinteractive.materialcalendarview.format.ArrayWeekDayFormatter
-     * @see #setWeekDayFormatter(com.prolificinteractive.materialcalendarview.format.WeekDayFormatter)
+     * @see coms.example.allinonelowfiproject.mainCalendar.format.ArrayWeekDayFormatter
+     * @see #setWeekDayFormatter(coms.example.allinonelowfiproject.mainCalendar.format.WeekDayFormatter)
      */
     public void setWeekDayLabels(@ArrayRes int arrayRes) {
         setWeekDayLabels(getResources().getTextArray(arrayRes));
