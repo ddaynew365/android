@@ -16,6 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
+
+        <provider android:authorities="calendar"
+            android:name="coms.example.allinonelowfiproject.mainCalendar.MaterialCalendarViewInitProvider">
+        </provider>
+
+        ﻿
+
+        ﻿
+</application>
 
 </manifest>
