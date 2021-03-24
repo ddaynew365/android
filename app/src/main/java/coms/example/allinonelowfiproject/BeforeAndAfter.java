@@ -10,5 +10,6 @@ public class BeforeAndAfter extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_before_and_after);
+        //test
     }
 }
