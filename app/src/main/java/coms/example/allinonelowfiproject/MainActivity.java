@@ -6,10 +6,15 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import org.threeten.bp.DayOfWeek;
@@ -51,9 +56,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_page);
-
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitleTextColor(Color.WHITE);
+
+        Button button = findViewById(R.id.HKB_btn);
         setSupportActionBar(toolbar);
 
         new SlidingRootNavBuilder(this)
@@ -121,6 +127,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+    public void onButtonClick(View view){
+        Intent newIntent = new Intent(getApplicationContext(),HouseKeepingBook.class);
+        startActivity(newIntent);
     }
 
     private class ApiSimulator extends AsyncTask<Void, Void, List<CalendarDay>> {
