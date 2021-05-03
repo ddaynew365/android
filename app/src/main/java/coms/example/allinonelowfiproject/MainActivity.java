@@ -24,6 +24,8 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.concurrent.Executors;
 
+import coms.example.allinonelowfiproject.dairy.dairy_activity;
+import coms.example.allinonelowfiproject.dairy.dairy_emotion;
 import coms.example.allinonelowfiproject.dashboard.DashboardRecyclerViewAdapter;
 import coms.example.allinonelowfiproject.decorators.EventDecorator;
 import coms.example.allinonelowfiproject.decorators.OneDayDecorator;
@@ -129,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void onButtonClick(View view){
-        Intent newIntent = new Intent(getApplicationContext(),HouseKeepingBook.class);
+        Intent newIntent = new Intent(getApplicationContext(), dairy_activity.class);
         startActivity(newIntent);
     }
 

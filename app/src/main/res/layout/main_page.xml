@@ -44,13 +44,12 @@ tools:context="coms.example.allinonelowfiproject.MainActivity">
             android:background="@color/thm2"
             android:orientation="vertical">
 
-            <coms.example.allinonelowfiproject.mainCalendar.MaterialCalendarView
-                xmlns:app="http://schemas.android.com/apk/res-auto"
+            <coms.example.allinonelowfiproject.mainCalendar.MaterialCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/calendarView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginRight="5dp"
                 app:mcv_selectionColor="@color/thm1"
                 app:mcv_showOtherDates="defaults" />
