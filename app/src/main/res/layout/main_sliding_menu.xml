@@ -22,4 +22,6 @@
         android:onClick="onButtonClick"
         android:text="가계부" />
 
+
+
 </FrameLayout>
