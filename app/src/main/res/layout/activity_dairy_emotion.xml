@@ -1,56 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".dairy.dairy_emotion">
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@color/thm2"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+    android:background="@color/thm2"
+    android:orientation="vertical">
 
     <!--    #첫 번째 줄-->
-    <TableLayout
-        android:id="@+id/tableLayout"
-        android:layout_width="0dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:stretchColumns="*"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        android:layout_marginBottom="30dp"
+        android:layout_marginHorizontal="5dp"
         tools:context=".TableMainActivity">
 
-        <TableRow android:layout_marginHorizontal="5dp">
-
-            <ImageView
-                android:layout_width="77dp"
+            <ImageButton
+                android:id="@+id/ib_back"
+                android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_column="0"
-                android:layout_gravity="left"
+                android:padding="0dp"
                 tools:ignore="MissingConstraints"
-                tools:srcCompat="@drawable/amazing_256" />
+                android:scaleType="fitCenter"
+                android:src="@drawable/amazing_256" />
 
 
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="50dp"
-                android:layout_column="8"
-                android:layout_gravity="right" />
-        </TableRow>
-    </TableLayout>
+    </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,7 +40,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="150dp"
             tools:context=".TableMainActivity"></LinearLayout>
 
         <LinearLayout
@@ -67,22 +48,13 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!--            <LinearLayout-->
-            <!--                android:layout_width="33dp"-->
-            <!--                android:layout_height="275dp"-->
-            <!--                android:layout_gravity="left"-->
-            <!--                android:orientation="vertical">-->
-
-            <!--            </LinearLayout>-->
-
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:gravity="center"
                 android:text="오늘 감정 선택해보세요"
                 android:textColor="@color/thm1"
-                android:textSize="16dp"></TextView>
+                android:textSize="16sp"></TextView>
 
             <TableLayout
                 android:layout_width="match_parent"
@@ -97,47 +69,54 @@
                 <TableRow android:layout_marginVertical="5dp">
 
                     <ImageButton
+                        android:id="@+id/im_0_0"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_column="0"
                         android:onClick="onClick"
-                        tools:srcCompat="@drawable/amazing_256">
+                        android:src="@drawable/amazing_256"
+                        android:scaleType="fitCenter"
+                        android:padding="0dp">
 
                     </ImageButton>
 
                     <ImageButton
+                        android:id="@+id/im_0_1"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_column="1"
                         android:onClick="onClick"
-                        tools:srcCompat="@drawable/amazing_256">
+                        tools:src="@drawable/amazing_256">
 
                     </ImageButton>
 
                     <ImageButton
+                        android:id="@+id/im_0_2"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_column="2"
                         android:onClick="onClick"
-                        tools:srcCompat="@drawable/amazing_256">
+                        tools:src="@drawable/amazing_256">
 
                     </ImageButton>
 
                     <ImageButton
+                        android:id="@+id/im_0_3"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_column="3"
                         android:onClick="onClick"
-                        tools:srcCompat="@drawable/amazing_256">
+                        tools:src="@drawable/amazing_256">
 
                     </ImageButton>
 
                     <ImageButton
+                        android:id="@+id/im_0_4"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_column="4"
                         android:onClick="onClick"
-                        tools:srcCompat="@drawable/amazing_256">
+                        tools:src="@drawable/amazing_256">
 
                     </ImageButton>
 
@@ -147,48 +126,53 @@
                 <TableRow android:layout_marginVertical="5dp">
 
                     <ImageButton
+                        android:id="@+id/im_1_0"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_column="0"
                         android:onClick="onClick"
-                        tools:srcCompat="@drawable/amazing_256"
+                        tools:src="@drawable/amazing_256"
                         >
 
                     </ImageButton>
 
                     <ImageButton
+                        android:id="@+id/im_1_1"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_column="1"
                         android:onClick="onClick"
-                        tools:srcCompat="@drawable/amazing_256">
+                        tools:src="@drawable/amazing_256">
 
                     </ImageButton>
 
                     <ImageButton
+                        android:id="@+id/im_1_2"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_column="2"
                         android:onClick="onClick"
-                        tools:srcCompat="@drawable/amazing_256">
+                        tools:src="@drawable/amazing_256">
 
                     </ImageButton>
 
                     <ImageButton
+                        android:id="@+id/im_1_3"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_column="3"
                         android:onClick="onClick"
-                        tools:srcCompat="@drawable/amazing_256">
+                        tools:src="@drawable/amazing_256">
 
                     </ImageButton>
 
                     <ImageButton
+                        android:id="@+id/im_1_4"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_column="4"
                         android:onClick="onClick"
-                        tools:srcCompat="@drawable/amazing_256">
+                        tools:src="@drawable/amazing_256">
 
                     </ImageButton>
 
@@ -198,49 +182,54 @@
                 <TableRow android:layout_marginVertical="5dp">
 
                     <ImageButton
+                        android:id="@+id/im_2_0"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_column="0"
                         android:onClick="onClick"
-                        tools:srcCompat="@drawable/amazing_256"
+                        tools:src="@drawable/amazing_256"
 
                         >
 
                     </ImageButton>
 
                     <ImageButton
+                        android:id="@+id/im_2_1"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_column="1"
                         android:onClick="onClick"
-                        tools:srcCompat="@drawable/amazing_256">
+                        tools:src="@drawable/amazing_256">
 
                     </ImageButton>
 
                     <ImageButton
+                        android:id="@+id/im_2_2"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_column="2"
                         android:onClick="onClick"
-                        tools:srcCompat="@drawable/amazing_256">
+                        tools:src="@drawable/amazing_256">
 
                     </ImageButton>
 
                     <ImageButton
+                        android:id="@+id/im_2_3"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_column="3"
                         android:onClick="onClick"
-                        tools:srcCompat="@drawable/amazing_256">
+                        tools:src="@drawable/amazing_256">
 
                     </ImageButton>
 
                     <ImageButton
+                        android:id="@+id/im_2_4"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_column="4"
                         android:onClick="onClick"
-                        tools:srcCompat="@drawable/amazing_256">
+                        tools:src="@drawable/amazing_256">
                     </ImageButton>
 
 
@@ -249,44 +238,49 @@
                 <TableRow android:layout_marginVertical="5dp">
 
                     <ImageButton
+                        android:id="@+id/im_3_0"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_column="0"
                         android:onClick="onClick"
-                        tools:srcCompat="@drawable/amazing_256">
+                        tools:src="@drawable/amazing_256">
                     </ImageButton>
 
                     <ImageButton
+                        android:id="@+id/im_3_1"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_column="1"
                         android:onClick="onClick"
-                        tools:srcCompat="@drawable/amazing_256">
+                        tools:src="@drawable/amazing_256">
 
                     </ImageButton>
 
                     <ImageButton
+                        android:id="@+id/im_3_2"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_column="2"
                         android:onClick="onClick"
-                        tools:srcCompat="@drawable/amazing_256">
+                        tools:src="@drawable/amazing_256">
                     </ImageButton>
 
                     <ImageButton
+                        android:id="@+id/im_3_3"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_column="3"
                         android:onClick="onClick"
-                        tools:srcCompat="@drawable/amazing_256">
+                        tools:src="@drawable/amazing_256">
                     </ImageButton>
 
                     <ImageButton
+                        android:id="@+id/im_3_4"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_column="4"
                         android:onClick="onClick"
-                        tools:srcCompat="@drawable/amazing_256">
+                        tools:src="@drawable/amazing_256">
                     </ImageButton>
 
 
@@ -303,16 +297,18 @@
             android:layout_height="60dp"
             android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="80dp"
+            <ImageButton
+                android:id="@+id/select_emotion"
+                android:layout_width="60dp"
                 android:layout_height="match_parent"
+                android:padding="0dp"
                 android:layout_gravity="center"
-                tools:srcCompat="@drawable/amazing_256"></ImageView>
+                android:scaleType="fitCenter"
+                android:src="@drawable/expect_256">
+            </ImageButton>
 
         </LinearLayout>
 
 
     </LinearLayout>
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

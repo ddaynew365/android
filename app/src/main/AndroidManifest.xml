@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".dairy.dairy_write"></activity>
+        <activity android:name=".dairy.dairy_list"></activity>
+        <activity android:name=".dairy.dairy_write" />
         <activity android:name=".dairy.dairy_emotion" />
         <activity android:name=".dairy.dairy_activity" />
         <activity android:name=".HouseKeepingBook" />
