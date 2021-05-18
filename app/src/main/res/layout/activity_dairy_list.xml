@@ -22,6 +22,7 @@
             android:layout_height="50dp"
             android:padding="0dp"
             android:scaleType="fitCenter"
+            android:background="@color/thm3"
             android:src="@drawable/amazing_256" />
 
         <View
@@ -37,6 +38,7 @@
             android:layout_height="50dp"
             android:padding="0dp"
             android:scaleType="fitCenter"
+            android:background="@color/thm3"
             android:src="@drawable/expect_256"
             />
 

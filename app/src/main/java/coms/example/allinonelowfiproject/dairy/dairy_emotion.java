@@ -17,7 +17,7 @@ public class dairy_emotion extends AppCompatActivity {
 
     private ImageButton ib_back;
     private ImageButton select_emotion;
-    private byte[] image_data;
+    private int image_data;
 
 
 
@@ -56,10 +56,6 @@ public class dairy_emotion extends AppCompatActivity {
     }
 
     public void onClick(View v){
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.expect_256);
-        ByteArrayOutputStream stream = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
-        byte[] byteArray = stream.toByteArray();
-        this.image_data = byteArray;
+        this.image_data = v.getId();
     }
 }
