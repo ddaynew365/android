@@ -28,6 +28,9 @@ public class dairy_emotion extends AppCompatActivity {
 
         ib_back = (ImageButton)findViewById(R.id.ib_back);
         select_emotion = (ImageButton)findViewById(R.id.select_emotion);
+        
+        //ageView.setBackground(new ShapeDrawable(new OvalShape()));
+        //geView.setClipToOutline(true);
 
 
         Intent intent =getIntent();
@@ -40,6 +43,7 @@ public class dairy_emotion extends AppCompatActivity {
                 onBackPressed();
             }
         });
+
 
         select_emotion.setOnClickListener(new View.OnClickListener() {
             @Override
