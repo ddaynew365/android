@@ -29,8 +29,9 @@ public class dairy_emotion extends AppCompatActivity {
         ib_back = (ImageButton)findViewById(R.id.ib_back);
         select_emotion = (ImageButton)findViewById(R.id.select_emotion);
         
-        //ageView.setBackground(new ShapeDrawable(new OvalShape()));
-        //geView.setClipToOutline(true);
+        //이미지뷰 동그랗게 만드는 코드
+        //ImageView.setBackground(new ShapeDrawable(new OvalShape()));
+        //ImageView.setClipToOutline(true);
 
 
         Intent intent =getIntent();
