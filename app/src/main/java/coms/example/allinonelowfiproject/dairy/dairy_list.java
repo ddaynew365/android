@@ -19,6 +19,8 @@ public class dairy_list extends AppCompatActivity {
     private RecyclerView recyclerView;
     private LinearLayoutManager linearLayoutManager;
     private ImageButton im_id_left;
+    private int image_data;
+    private String day;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,12 +34,15 @@ public class dairy_list extends AppCompatActivity {
         im_id_left = (ImageButton)findViewById(R.id.im_id_left);
 
 
-
+        // 데이터 받는 부분
         Intent intent = getIntent();
         String save = intent.getStringExtra("save");
+        day = intent.getStringExtra("day");
+        image_data = intent.getIntExtra("image",1);
+
 
         arrayList = new ArrayList<>();
-        MainData mainData = new MainData(R.drawable.amazing_256, R.drawable.amazing_256, save);
+        MainData mainData = new MainData(image_data, R.drawable.amazing_256, save,day);
         arrayList.add(mainData);
 
         mainAdapter = new MainAdapter(arrayList);

@@ -5,11 +5,13 @@ public class MainData {
     private int iv_profile;
     private int iv_photo;
     private String tv_content;
+    private String day;
 
-    public MainData(int iv_profile, int iv_photo, String tv_content) {
+    public MainData(int iv_profile, int iv_photo, String tv_content, String day) {
         this.iv_profile = iv_profile;
         this.iv_photo = iv_photo;
         this.tv_content = tv_content;
+        this.day = day;
     }
 
     public int getIv_profile() {
@@ -34,5 +36,13 @@ public class MainData {
 
     public void setTv_content(String tv_content) {
         this.tv_content = tv_content;
+    }
+
+    public String getDay() {
+        return day;
+    }
+
+    public void setDay(String day) {
+        this.day = day;
     }
 }

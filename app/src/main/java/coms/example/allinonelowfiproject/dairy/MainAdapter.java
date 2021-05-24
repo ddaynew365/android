@@ -38,6 +38,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.CustomViewHold
         holder.iv_profile.setImageResource(arrayList.get(position).getIv_profile());
         holder.tv_content.setText(arrayList.get(position).getTv_content());
         holder.iv_photo.setImageResource(arrayList.get(position).getIv_photo());
+        holder.day.setText(arrayList.get(position).getDay());
     }
 
     @Override
@@ -49,13 +50,15 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.CustomViewHold
 
         protected ImageView iv_profile;
         protected TextView tv_content;
-          protected ImageView iv_photo;
+        protected ImageView iv_photo;
+        protected TextView day;
 
         public CustomViewHolder(View view) {
             super(view);
             this.iv_profile = (ImageView) view.findViewById(R.id.iv_profile);
             this.tv_content = (TextView) view.findViewById(R.id.tv_content);
             this.iv_photo = (ImageView) view.findViewById(R.id.iv_photo);
+            this.day = (TextView) view.findViewById(R.id.day);
         }
     }
 }
