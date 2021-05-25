@@ -17,7 +17,7 @@ public class dairy_emotion extends AppCompatActivity {
 
     private ImageButton ib_back;
     private ImageButton select_emotion;
-    private int image_data;
+    private int image_data= 2131230934;
 
 
 
@@ -62,5 +62,6 @@ public class dairy_emotion extends AppCompatActivity {
 
     public void onClick(View v){
         this.image_data = v.getId();
+        v.setSelected(!v.isSelected());
     }
 }

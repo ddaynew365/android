@@ -36,9 +36,9 @@
             android:id="@+id/im_id_right"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:padding="0dp"
+            android:padding="10dp"
             android:scaleType="fitCenter"
-            android:background="@color/thm3"
+            android:background="@color/thm2"
             android:src="@drawable/magnifying_glass"
             />
 

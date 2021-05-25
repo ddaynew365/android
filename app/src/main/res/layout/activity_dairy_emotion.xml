@@ -55,7 +55,7 @@
                 android:gravity="center"
                 android:text="오늘 감정 선택해보세요"
                 android:textColor="@color/thm1"
-                android:textSize="16sp"></TextView>
+                android:textSize="20sp"></TextView>
 
             <TableLayout
                 android:layout_width="match_parent"
@@ -74,9 +74,10 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_column="0"
-                        android:background="@color/thm2"
+                        android:background="@drawable/emotion_button_select"
                         android:onClick="onClick"
-                        android:padding="0dp"
+                        android:layout_marginHorizontal="5dp"
+                        android:padding="5dp"
                         android:scaleType="fitCenter"
                         android:src="@drawable/amazing_256">
 
@@ -88,7 +89,8 @@
                         android:layout_height="50dp"
                         android:layout_column="1"
                         android:onClick="onClick"
-                        android:background="@color/thm2"
+                        android:layout_marginHorizontal="5dp"
+                        android:background="@drawable/emotion_button_select"
                         android:scaleType="fitCenter"
                         android:src="@drawable/expect_256"
                         android:padding="0dp">
@@ -103,7 +105,8 @@
                         android:onClick="onClick"
                         android:scaleType="fitCenter"
                         android:padding="0dp"
-                        android:background="@color/thm2"
+                        android:layout_marginHorizontal="5dp"
+                        android:background="@drawable/emotion_button_select"
                         android:src="@drawable/angry">
 
                     </ImageButton>
@@ -116,7 +119,8 @@
                         android:onClick="onClick"
                         android:scaleType="fitCenter"
                         android:padding="0dp"
-                        android:background="@color/thm2"
+                        android:layout_marginHorizontal="5dp"
+                        android:background="@drawable/emotion_button_select"
                         android:src="@drawable/disappointed">
 
                     </ImageButton>
@@ -129,7 +133,8 @@
                         android:onClick="onClick"
                         android:scaleType="fitCenter"
                         android:padding="0dp"
-                        android:background="@color/thm2"
+                        android:layout_marginHorizontal="5dp"
+                        android:background="@drawable/emotion_button_select"
                         android:src="@drawable/nauseated">
 
                     </ImageButton>
@@ -147,7 +152,8 @@
                         android:onClick="onClick"
                         android:scaleType="fitCenter"
                         android:padding="0dp"
-                        android:background="@color/thm2"
+                        android:layout_marginHorizontal="5dp"
+                        android:background="@drawable/emotion_button_select"
                         android:src="@drawable/fearful"
                         >
 
@@ -161,7 +167,8 @@
                         android:onClick="onClick"
                         android:scaleType="fitCenter"
                         android:padding="0dp"
-                        android:background="@color/thm2"
+                        android:layout_marginHorizontal="5dp"
+                        android:background="@drawable/emotion_button_select"
                         android:src="@drawable/blush">
 
                     </ImageButton>
@@ -174,7 +181,8 @@
                         android:onClick="onClick"
                         android:scaleType="fitCenter"
                         android:padding="0dp"
-                        android:background="@color/thm2"
+                        android:layout_marginHorizontal="5dp"
+                        android:background="@drawable/emotion_button_select"
                         android:src="@drawable/love">
 
                     </ImageButton>
@@ -187,8 +195,9 @@
                         android:onClick="onClick"
                         android:scaleType="fitCenter"
                         android:padding="0dp"
-                        android:background="@color/thm2"
-                        tools:src="@drawable/amazing_256">
+                        android:layout_marginHorizontal="5dp"
+                        android:background="@drawable/emotion_button_select"
+                        android:src="@drawable/amazing_256">
 
                     </ImageButton>
 
@@ -197,11 +206,12 @@
                         android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_column="4"
+                        android:background="@drawable/emotion_button_select"
                         android:onClick="onClick"
-                        android:scaleType="fitCenter"
                         android:padding="0dp"
-                        android:background="@color/thm2"
-                        tools:src="@drawable/amazing_256">
+                        android:layout_marginHorizontal="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/amazing_256">
 
                     </ImageButton>
 
@@ -363,12 +373,12 @@
 
             <ImageButton
                 android:id="@+id/select_emotion"
-                android:layout_width="60dp"
-                android:layout_height="match_parent"
-                android:padding="0dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5dp"
                 android:layout_gravity="center"
                 android:scaleType="fitCenter"
-                android:background="@color/thm3"
+                android:background="@color/thm1"
                 android:src="@drawable/right_arrow">
             </ImageButton>
 

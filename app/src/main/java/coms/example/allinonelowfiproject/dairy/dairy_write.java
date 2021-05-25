@@ -50,7 +50,7 @@ public class dairy_write extends AppCompatActivity {
         String day = intent.getStringExtra("day");
         day_text.setText(day);
 
-        image_data = intent.getIntExtra("image",1);
+        image_data = intent.getIntExtra("image",2131230934);
 
         // 감정 표현 나타내는 부분
         emotion = findViewById(R.id.emotion);
