@@ -38,6 +38,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.CustomViewHold
         holder.iv_profile.setImageResource(arrayList.get(position).getIv_profile());
         holder.tv_content.setText(arrayList.get(position).getTv_content());
         holder.iv_photo.setImageResource(arrayList.get(position).getIv_photo());
+        holder.iv_photo.setVisibility(holder.iv_photo.VISIBLE);
         holder.day.setText(arrayList.get(position).getDay());
     }
 

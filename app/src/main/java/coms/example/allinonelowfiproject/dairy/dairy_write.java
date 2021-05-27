@@ -6,7 +6,9 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -17,6 +19,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.InputStream;
+
+import javax.annotation.Nullable;
 
 import coms.example.allinonelowfiproject.R;
 
@@ -31,8 +35,9 @@ public class dairy_write extends AppCompatActivity {
     private String user_enter;
     private Button photo_delete;
     private int image_data;
+    private int emotion_data;
     private static final int REQUEST_CODE = 0;
-
+    private static int PICK_IMAGE_REQUEST = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,40 +55,40 @@ public class dairy_write extends AppCompatActivity {
         String day = intent.getStringExtra("day");
         day_text.setText(day);
 
-        image_data = intent.getIntExtra("image",2131230934);
+        emotion_data = intent.getIntExtra("image",2131230934);
 
         // 감정 표현 나타내는 부분
         emotion = findViewById(R.id.emotion);
-        switch(image_data){
+        switch(emotion_data){
         case 2131230934:
-            image_data = R.drawable.amazing_256;
+            emotion_data = R.drawable.amazing_256;
             break;
         case 2131230935:
-            image_data = R.drawable.expect_256;
+            emotion_data = R.drawable.expect_256;
             break;
         case 2131230936:
-            image_data = R.drawable.angry;
+            emotion_data = R.drawable.angry;
             break;
         case 2131230937:
-            image_data = R.drawable.disappointed;
+            emotion_data = R.drawable.disappointed;
             break;
         case 2131230938:
-            image_data = R.drawable.nauseated;
+            emotion_data = R.drawable.nauseated;
             break;
         case 2131230939:
-            image_data = R.drawable.fearful;
+            emotion_data = R.drawable.fearful;
             break;
         case 2131230940:
-            image_data = R.drawable.blush;
+            emotion_data = R.drawable.blush;
             break;
         case 2131230941:
-            image_data = R.drawable.love;
+            emotion_data = R.drawable.love;
             break;
         default:
             break;
         }
 
-        emotion.setImageResource(image_data);
+        emotion.setImageResource(emotion_data);
 
         // 사진 추가 버튼 클릭 시
         photo_add.setOnClickListener(new View.OnClickListener() {
@@ -97,11 +102,15 @@ public class dairy_write extends AppCompatActivity {
             }
         });
 
+
+
+
         // 사진 삭제 버튼 클릭 시
         photo_delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 photo_iv.setVisibility((View.GONE));
+
 
             }
         });
@@ -114,7 +123,7 @@ public class dairy_write extends AppCompatActivity {
                 Intent intent = new Intent(dairy_write.this, dairy_list.class);
                 intent.putExtra("save",user_enter);
                 intent.putExtra("day", day);
-                intent.putExtra("image",image_data);
+                intent.putExtra("image",emotion_data);
                 startActivity(intent);
             }
         });
