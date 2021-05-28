@@ -30,6 +30,7 @@ public class dairy_list extends AppCompatActivity {
     private String day;
     private SharedPreferences preferences;
     private SharedPreferences.Editor editor;
+    private ImageButton delete;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +43,6 @@ public class dairy_list extends AppCompatActivity {
         recyclerView = (RecyclerView)findViewById(R.id.rv);
         linearLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(linearLayoutManager);
-
         im_id_left = (ImageButton)findViewById(R.id.im_id_left);
 
 

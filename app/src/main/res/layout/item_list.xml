@@ -24,6 +24,23 @@
             android:layout_height="60dp">
         </TextView>
 
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:id="@+id/delete"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            android:background="@color/thm2"
+            android:src="@drawable/trash"
+
+            ></ImageButton>
+
 
     </LinearLayout>
 

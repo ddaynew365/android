@@ -1,11 +1,14 @@
 package coms.example.allinonelowfiproject.dairy;
 
+import android.widget.ImageButton;
+
 public class MainData {
 
     private int iv_profile;
     private int iv_photo;
     private String tv_content;
     private String day;
+    private ImageButton delete;
 
     public MainData(int iv_profile, int iv_photo, String tv_content, String day) {
         this.iv_profile = iv_profile;

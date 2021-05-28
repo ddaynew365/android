@@ -64,8 +64,16 @@ public class dairy_activity extends AppCompatActivity {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView view, int year, int month, int dayOfMonth) {
                 // todo
-                String inputDate =Integer.toString(year)+Integer.toString(month)+Integer.toString(dayOfMonth);
-                DateFormat dateFormat = new SimpleDateFormat("yyyyMMdd");
+                String inputDate;
+                if(dayOfMonth < 10){
+                    inputDate =Integer.toString(year)+Integer.toString(month)+"0"+Integer.toString(dayOfMonth);
+                }
+                else{
+                    inputDate =Integer.toString(year)+Integer.toString(month)+Integer.toString(dayOfMonth);
+                }
+
+
+                DateFormat dateFormat= new SimpleDateFormat("yyyyMMdd");
                 Date date = null;
                 try {
                     date = dateFormat.parse(inputDate);
